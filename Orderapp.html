@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<title>OrderApp</title>
+</head>
+<body>
+	<div class="container" style="text-align:center">
+		<div class="row">
+			<h1>Order App</h1>
+			<div class="col-lg-12" >
+				<h4>Order Number</h2>
+				<input type="text">
+				<h4>Company Name</h2><br>
+				<input type="text">
+				<h4>How many parts</h4><br>
+				<input type="text"><br>
+				<button onclick="window.location.href = 'Parts.html';">Submit</button>
+
+
+			</div>
+
+		</div>
+	</div>
+
+</body>
+</html>
+
+<script type="text/javascript">
+	document.getElementByName('parts').value;
+	window.onload = function() {
+   		var parts = document.getElementByName('parts').value;
+   		localStorage.setItem("storageName",parts);
+	}
+</script>
