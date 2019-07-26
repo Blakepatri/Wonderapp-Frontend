@@ -14,7 +14,7 @@
 				<h4>Company Name</h2><br>
 				<input type="text">
 				<h4>How many parts</h4><br>
-				<input type="text"><br>
+				<input type="text" id="parts"><br>
 				<button onclick="window.location.href = 'Parts.html';">Submit</button>
 
 
@@ -27,9 +27,8 @@
 </html>
 
 <script type="text/javascript">
-	document.getElementByName('parts').value;
 	window.onload = function() {
-   		var parts = document.getElementByName('parts').value;
+   		var parts = document.getElementById('parts').value;
    		localStorage.setItem("storageName",parts);
 	}
 </script>
