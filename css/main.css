@@ -1,0 +1,152 @@
+body{
+	background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc1JyBoZWlnaHQ9JzUnPgogIDxyZWN0IHdpZHRoPSc1JyBoZWlnaHQ9JzUnIGZpbGw9J3doaXRlJy8+CiAgPHBhdGggZD0nTTAgNUw1IDBaTTYgNEw0IDZaTS0xIDFMMSAtMVonIHN0cm9rZT0nIzg4OCcgc3Ryb2tlLXdpZHRoPScxJy8+Cjwvc3ZnPg==');
+}
+
+#wrapper1{
+	width:80%;
+	margin-left:auto;
+	margin-right:auto;
+	font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+	background-color:#FFFFFF;
+
+}
+
+#wrapper2{
+	min-height: 90vh;
+}
+
+#wrapper3{
+	margin: 0;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
+
+
+}
+
+#wrapper img{
+	float:left;
+}
+
+header h1{
+	border-bottom:solid 1px #0000cd;
+	display:inline;
+	margin-left:20px;
+	color:#0000cd;
+}
+
+header h2{
+	display:block;
+	margin:0px 0px 5px 0px;
+	color:#0000cd;
+}
+
+header{
+	background-color:#FFFFFF;
+	padding-bottom:10px;
+	padding-top:5px;
+	box-shadow: 0 8px 6px -6px black;
+	background-image:url("../images/bg_header.png");
+}
+
+
+
+header img{
+	margin-right:10px;
+	margin-left:5px;
+}
+
+#col1{
+	width:80%;
+}
+
+main{
+	margin-left:30px;
+}
+
+#mainWrapper h3{
+	background-color:#A70A35;
+	padding:5px 0px 5px 5px;
+	color:#FFFFFF;
+}
+
+#col2{
+	display:block;
+	max-width:20%;
+	position:absolute;
+	top:90px;
+	right:11%;
+}
+
+.title{
+	padding:5px 10px 10px 10px;
+	background-color:#A70A35;
+	text-align:center;
+	box-shadow: 0px 2px 5px black;
+	color:#FFFFFF;
+}
+
+.title a{
+	text-decoration:none;
+	color:#FFFFFF;
+}
+
+dt { color: #999999;
+	font-weight: bold;}
+
+h4 { color: #191970;
+	font-weight: bold;}
+
+table {
+	margin: auto;
+	border: 3px solid #993333;
+	border-collapse: collapse;
+	width: 500px;}
+
+td , th{	text-align: center;
+		padding: 4px;
+		border: 1px solid #993333;}
+
+tr:nth-of-type(even) { background-color: #E8E8E8 ; }
+nav{
+	background-color:#414042;
+	padding-bottom:10px;
+}
+
+nav ul{
+	list-style:none;
+	margin:0;
+	margin-left:10px;
+	padding:0;
+	padding-left:10px;
+}
+
+nav a{
+	color:#FFFFFF;
+	text-decoration:none;
+	text-align:left;
+}
+
+nav a:hover{
+	box-shadow: 0 8px 6px -6px black;
+}
+
+footer{
+	text-align:center;
+	background-color:#66cdaa;
+	box-shadow: 0px 2px 5px black;
+	padding-top:5px;
+	padding-bottom:5px;
+	margin-bottom: 0px;
+}
+
+
+h5 {font-size: 60px;
+    margin-bottom: 5px;
+    margin-top:5px;}
+h6 {font-size: 40px;
+    margin-bottom: 5px;
+    margin-top:5px;}
