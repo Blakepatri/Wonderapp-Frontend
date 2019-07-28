@@ -80,63 +80,53 @@
             },
              body: JSON.stringify(request)
             })
-            console.log(responseX)
-            if (responseX.status === 'success' && responseY.status === 'success' && responseZ.status === 'success') {
+            console.log(responseX, responseY, responseZ)
+            if (responseX.status === 200 && responseY.status === 200 && responseZ.status === 200) {
               await fetch('http://localhost:8000/api/commit', {
                 method: 'post',
                 headers: {
                   'Accept': 'application/json',
                   'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(responseX.xid)
+                }
               })
               await fetch('http://localhost:8001/api/commit', {
                 method: 'post',
                 headers: {
                   'Accept': 'application/json',
                   'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(responseY.xid)
+                }
               })
               await fetch('http://localhost:8002/api/commit', {
                 method: 'post',
                 headers: {
                   'Accept': 'application/json',
                   'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(responseZ.xid)
+                }
               })
             } else {
-              if (responseX.xid) {
-                await fetch('http://localhost:8000/api/rollback', {
-                  method: 'post',
-                  headers: {
-                    'Accept': 'application/json',
-                    'Content-Type': 'application/json'
-                  },
-                  body: JSON.stringify(resonseX.xid)
-                })
-              }
-              if (responseY.xid) {
-                await fetch('http://localhost:8001/api/rollback', {
-                  method: 'post',
-                  headers: {
-                    'Accept': 'application/json',
-                    'Content-Type': 'application/json'
-                  },
-                  body: JSON.stringify(responseY.xid)
-                })
-              }
-              if (responseZ.xid) {
-                await fetch('http://localhost:8002/api/rollback', {
-                  method: 'post',
-                  headers: {
-                    'Accept': 'application/json',
-                    'Content-Type': 'application/json'
-                  },
-                  body: JSON.stringify(responseZ.xid)
-                })
-              }
+              console.log('here')
+              await fetch('http://localhost:8000/api/rollback', {
+                method: 'post',
+                headers: {
+                  'Accept': 'application/json',
+                  'Content-Type': 'application/json'
+                }
+              })
+              await fetch('http://localhost:8001/api/rollback', {
+                method: 'post',
+                headers: {
+                  'Accept': 'application/json',
+                  'Content-Type': 'application/json'
+                }
+              })
+            
+              await fetch('http://localhost:8002/api/rollback', {
+                method: 'post',
+                headers: {
+                  'Accept': 'application/json',
+                  'Content-Type': 'application/json'
+                }
+              })
             }
           }
 				</script>
