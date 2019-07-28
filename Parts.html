@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+
+	<title>OrderApp</title>
+	<script type="text/javascript">
+		var parts = localStorage.getItem("storageName");
+		function loadForms() {
+
+		}
+	</script>
+</head>
+<body>
+	<div class="container" style="text-align:center">
+		<div class="row">
+			<h1>Order App</h1>
+			<div class="col-lg-12">
+				<h4>Part Number</h4><br>
+				<input type="text"><br>
+				<h4>Quanity</h4><br>
+				<input type="text"><br>
+				<h4>Company Name</h4><br>
+				<input type="text" name="parts"><br>
+				<script type="text/javascript">
+					for (var i = 0; i < parts; i++) {
+						document.write('<h4>Part Number</h2> <input type="text"><br> <h4>Quanity</h4><br> <input type="text"><br> <h4>Company Name</h4><br> <input type="text" name="parts"><br>');
+					}
+				</script>
+				<button onclick="">Submit</button>
+
+
+
+
+			</div>
+
+		</div>
+	</div>
+
+</body>
+</html>
